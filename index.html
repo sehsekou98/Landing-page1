@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./styles.css">
+    <title>Easy Technology Group</title>
+</head>
+<body>
+    <header>
+        <h1>Easy Tech Group.</h1>
+
+        <section class="menu opened">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li class="active">Products</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+        <section class="main">
+            <section class="left">
+                <p class="title">Easy Technology Group</p>
+                <p class="msg">Easy Technology Group is a Software Group of company located currently in the City of Rabat, Morocco. 
+                    The company is a start-up and is aimed at providing high quality software solutions to organizations of all sizes.
+                    We are pationate about working with non-profit organizations, government organizations, private business and corperations 
+                    to ensure proffessional software integrations with the state of the art technologies. 
+                </p>
+            
+                 <button class="cta">Learn More</button>
+            </section>
+            <section class="right">
+                <img src="./images/bg-image.jpg" alt="image">
+            </section>
+        </section>
+
+        <script>
+            var menu = document.querySelector('.menu');
+            var menuBtn = document.querySelector('.menu button');
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('opened')
+            })
+        </script>
+    
+</body>
+</html>
